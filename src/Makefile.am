@@ -118,6 +118,7 @@ BITCOIN_CORE_H = \
   leveldbwrapper.h \
   limitedmap.h \
   main.h \
+  memusage.h \
   masternode.h \
   masternode-payments.h \
   masternode-budget.h \

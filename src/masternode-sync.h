@@ -38,7 +38,8 @@ public:
     int64_t lastBudgetItem;
     int64_t lastFailure;
     int nCountFailures;
-
+    std::atomic<int64_t> lastProcess;
+    std::atomic<bool> fBlockchainSynced;
     // sum of all counts
     int sumMasternodeList;
     int sumMasternodeWinner;
@@ -71,8 +72,8 @@ public:
     void Reset();
     void Process();
     bool IsSynced();
-    bool IsBlockchainSynced();
     bool IsMasternodeListSynced() { return RequestedMasternodeAssets > MASTERNODE_SYNC_LIST; }
+	bool IsBlockchainSynced();
     void ClearFulfilledRequest();
 };
 
