@@ -1,9 +1,9 @@
 package=native_ds_store
 $(package)_version=1.1.0
-$(package)_download_path=https://github.com/al45tair/mac_alias/archive/
+$(package)_download_path=https://github.com/al45tair/ds_store/archive/
 $(package)_download_file=v$($(package)_version).tar.gz
 $(package)_file_name=$(package)-$($(package)_version).tar.gz
-$(package)_sha256_hash=b10cb44ecb64fc25283fae7a9cf365d2829377d84e37b9c21100aca8757509be
+$(package)_sha256_hash=a9f4c0755c6be7224ff7029e188dd262e830bb81e801424841db9eb0780ec8ed
 $(package)_install_libdir=$(build_prefix)/lib/python/dist-packages
 $(package)_dependencies=native_biplist
 
